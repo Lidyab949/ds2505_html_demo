@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS2505 Demo Site - HTML Forms</title>
+    
+</head>
+
+<body>
+    <h1 >HTML Forms</h1>
+    <p>An HTML form is an interactive tool used on your webpage that is made up of various
+        controls used to collect/obtain sata from your website's visitors/users. The
+        information is then validated, then sent to the server for further processing and/or
+        storage. Examples of commonly used forms are registration/sign up forms and login/
+        signin forma</p>
+    <p>An example of a student registration form for EICN is given below:</p>
+    <form id="frmRegister" method="post" accept-charset="UTF-8">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label for="txtNames">Names *:</label></br />
+                <input type="text" id="txtNames" autofocus required form="frmRegister" placeholder=" Your names"
+                    title=" Please enter your names" tableindex="10" />
+            </p>
+            <p>
+                <label for="dtpBirthDate">Birth Date *:</label></br />
+                <input type="date" id="dtpBirthDate" required form="frmRegister" placeholder=" mm-dd-yyyy"
+                    title=" Please enter your date of birth" tableindex="20" />
+            </p>
+            <p>
+                <label>Gender *:</label></br />
+                <input type="radio" id="rdoMale" required form="frmRegister" name="gender" title=" Male Gender"
+                    tableindex="30" value="Male" />
+                <label for="rdoMale">Male </label>&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="rdoFemale" required form="frmRegister" name="gender" title=" Female Gender"
+                    tableindex="40" value="Female" />
+                <label for="rdoMale">Female </label>
+            </p>
+            <!-- TODO: Add the email and password fields to your form -->ss
+            <p>
+                <label for="txtEmail">Email *:</label><br />
+                <input type="email" id="txtEmail" name="email" required form="frmRegister"
+                    placeholder="Enter your email address" title="Please enter your email" tabindex="50" />
+            </p>
+
+            <p>
+                <label for="txtPassword">Password *:</label><br />
+                <input type="password" id="txtPassword" name="password" required form="frmRegister"
+                    placeholder="Enter your password" title="Please enter your password" tabindex="60" />
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legebd>Message Details</legebd>
+            <p>
+                <label for="txtSubject">Subject *:</label></br />
+                <input type="date" id="txtSubject" required form="frmRegister" placeholder=" Message subject"
+                    title=" Please enter your message subject" tableindex="80" />
+            </p>
+            <p>
+                <label for="txaMessage">Message *:</label></br />
+                <textarea id="txaMessage" required form="frmRegister" placeholder=" Message details"
+                    title=" Please enter your message here" tableindex="90" /></textarea>
+            </p>
+
+            </p>
+            <p>
+                <input type="submit" id="btnSubmit" tabindex="100" value="Submit" form="frmRegister"
+                    title="Submit registration details">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Reset" tabindex="110" value="Reset" form="frmRegister"
+                    title="Clear all fields">
+
+            </p>
+        </fieldset>
+
+    </form>
+    <footer>
+        DS 2505 Copyright &copy 2022-
+        <span id="" currYear">
+            <script async defer>
+                document.getElementaryById("currYear").innerHTML =
+                    new Date().getFullYear();
+            </script>
+        </span>
+    </footer>
+
+</body>
+
+</html>
